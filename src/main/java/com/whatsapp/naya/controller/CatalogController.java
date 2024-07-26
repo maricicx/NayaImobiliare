@@ -26,7 +26,6 @@ public class CatalogController
    @PostMapping("/webhook")
    public ResponseEntity<String> getCatalog(@RequestBody String payload) {
       // Process the webhook payload
-      System.out.println(payload);
       logger.info(payload);
       return ResponseEntity.ok("Received");
    }
